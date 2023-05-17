@@ -18,7 +18,7 @@ function App() {
   useEffect(() => {
     setIsLoading(true);
     axios
-      .get(`http://www.omdbapi.com/?s=${search}&apikey=${API_KEY}`)
+      .get(`https://www.omdbapi.com/?s=${search}&apikey=${API_KEY}`)
       .then((response) => {
         setMovies(response.data.Search);
         setIsLoading(false);
